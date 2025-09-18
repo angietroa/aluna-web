@@ -1,0 +1,150 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.dashboard-wrapper {
+  @include page-wrapper("../../assets/images/low_background.svg");
+}
+
+.dashboard-container {
+  padding-top: 21px;
+}
+
+.dashboard-content {
+  @include flex-column;
+  min-height: calc(100vh - 200px);
+  position: relative;
+}
+
+.dashboard-buttons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 31px;
+  align-self: flex-end;
+}
+
+.dashboard-button {
+  @include button-primary;
+  width: $button-width;
+  height: $button-height;
+}
+
+.dashboard-metrics {
+  display: flex;
+  gap: 31px;
+  margin-bottom: 33px;
+  align-items: center;
+}
+
+.dashboard-streak {
+  @include flex-column-center;
+  min-width: fit-content;
+}
+
+.dashboard-streak-number {
+  margin-bottom: 6px;
+  color: $text-primary;
+}
+
+.dashboard-streak-text {
+  color: $primary-color;
+}
+
+.dashboard-description {
+  @include flex-center;
+  gap: 11px;
+}
+
+.dashboard-ia-icon {
+  width: $icon-size;
+  height: $icon-size;
+  flex-shrink: 0;
+}
+
+.dashboard-description-text {
+  @include text-body;
+  color: $text-primary;
+}
+
+.dashboard-recommendations-title {
+  color: $primary-color;
+  padding-bottom: 17px;
+}
+
+.dashboard-recommendations-content {
+  @include flex-center;
+  gap: 11px;
+  margin-bottom: 20px;
+}
+
+.dashboard-recommendations-icon {
+  width: $icon-size;
+  height: $icon-size;
+  flex-shrink: 0;
+}
+
+.dashboard-recommendations-text {
+  @include text-body;
+  color: $text-primary;
+}
+
+.dashboard-panel-title {
+  color: $primary-color;
+  padding-bottom: 31px;
+}
+
+.dashboard-graphics-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: clamp(16px, 2vw, 26px);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 3%;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: clamp(20px, 4vw, 30px);
+  }
+}
+
+.dashboard-graphic-container {
+  @include graphic-container;
+  height: calc($graphic-height + 2.5em + 21px);
+  width: 100%;
+  overflow: hidden;
+}
+
+.dashboard-graphic-container-small {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dashboard-graphic-container-large {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dashboard-graphic-title {
+  color: #000000;
+  padding-bottom: 21px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  height: 2.5em;
+  line-height: 1.25em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+}
+
+.dashboard-graphic-image {
+  width: 100%;
+  height: $graphic-height;
+  object-fit: contain;
+  background-color: $accent-color;
+  border-radius: 26px;
+}

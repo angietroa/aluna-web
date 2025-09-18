@@ -1,0 +1,65 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.home-wrapper {
+  @include page-wrapper("../../assets/images/sides_background.svg");
+}
+
+.home-container {
+  .MuiButton-root,
+  .MuiButtonBase-root,
+  .MuiTypography-root,
+  .MuiTextField-root {
+    margin-bottom: 7px;
+  }
+}
+
+.home-content {
+  @include flex-column-center;
+  min-height: 100vh;
+}
+
+.home-logo {
+  width: 226px;
+  height: 230px;
+  margin-bottom: 55px;
+}
+
+.home-form {
+  @include flex-column;
+  align-items: center;
+  max-width: 364px;
+  width: 100%;
+}
+
+.home-input {
+  .MuiOutlinedInput-root {
+    border-radius: 8px;
+
+    &:hover .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-color;
+    }
+
+    &.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-color;
+    }
+  }
+}
+
+.home-text {
+  @include text-body;
+  text-align: left;
+  width: 100%;
+}
+
+.home-button {
+  @include button-primary;
+  width: 100%;
+  height: 48px;
+}
+
+.home-help-button {
+  @include button-secondary;
+  width: 100%;
+  height: 48px;
+}
