@@ -21,26 +21,19 @@ Una aplicación web de meditación desarrollada con React y Material-UI que perm
 
 ## 📦 Instalación
 
-1. **Clonar el repositorio**
-
-   ```bash
-   git clone [URL_DEL_REPOSITORIO]
-   cd Web
-   ```
-
-2. **Instalar dependencias**
+1. **Instalar dependencias**
 
    ```bash
    npm install
    ```
 
-3. **Ejecutar en modo desarrollo**
+2. **Ejecutar en modo desarrollo**
 
    ```bash
    npm start
    ```
 
-4. **Abrir en el navegador**
+3. **Abrir en el navegador**
    ```
    http://localhost:3000
    ```
