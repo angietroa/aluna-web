@@ -1,0 +1,102 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.help-wrapper {
+  @include page-wrapper("../../assets/images/sides_background.svg");
+}
+
+.help-container {
+  padding-top: 21px;
+}
+
+.help-content {
+  @include flex-column;
+  align-items: center;
+}
+
+.help-title {
+  color: $primary-color;
+  text-align: center;
+  padding-bottom: 11px;
+}
+
+.help-subtitle {
+  color: $text-primary;
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+.help-step {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  margin-bottom: 14px;
+}
+
+.help-step-number {
+  width: 44px;
+  height: 44px;
+  background-color: $primary-color;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.help-step-number-text {
+  color: white;
+  font-weight: $font-weight-bold;
+}
+
+.help-step-text {
+  @include text-body;
+  color: $text-primary;
+  flex: 1;
+}
+
+.help-step-two-columns {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+.help-step-left {
+  flex: 0 0 50%;
+  min-width: 0;
+  margin-right: 49px;
+}
+
+.help-step-right {
+  flex: 0 0 50%;
+  min-width: 0;
+}
+
+.help-step-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0 0 50%;
+  min-width: 0;
+}
+
+.help-step-two-columns:nth-of-type(2) .help-step-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.help-step-two-columns:nth-of-type(3) .help-step-image-container {
+  justify-content: flex-end;
+  margin-right: 49px;
+}
+
+.help-step-two-columns:nth-of-type(3) .help-step-right {
+  margin-left: 0;
+  flex: 0 0 calc(50% - 49px);
+}
+
+.help-step-image {
+  max-width: 100%;
+  height: auto;
+}

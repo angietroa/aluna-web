@@ -1,0 +1,154 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.creation-wrapper {
+  @include page-wrapper("../../assets/images/low_background.svg");
+}
+
+.creation-container {
+  padding-top: 21px;
+}
+
+.creation-content {
+  @include flex-column;
+}
+
+.creation-two-columns {
+  display: flex;
+  gap: 66px;
+  padding-top: 46px;
+  padding-bottom: 32px;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.creation-left-column {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.creation-right-column {
+  flex: 1;
+  min-width: 0;
+  @include flex-column;
+  gap: 32px;
+}
+
+.creation-time-container {
+  background-color: $accent-color;
+  border-radius: 12px;
+  padding: 89px 24px 33px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 364px;
+  width: 100%;
+}
+
+.creation-date-input {
+  width: 100%;
+
+  .MuiOutlinedInput-root.MuiInputBase-root {
+    border-radius: 8px;
+    background-color: $accent-color;
+
+    .MuiInputBase-input.MuiOutlinedInput-input {
+      background-color: $accent-color;
+    }
+
+    &:hover .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-color;
+    }
+
+    &.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-color;
+    }
+  }
+
+  .MuiInputLabel-root.MuiInputLabel-formControl {
+    background-color: $accent-color;
+    padding: 0 4px;
+  }
+}
+
+.creation-input,
+.creation-select {
+  .MuiOutlinedInput-root.MuiInputBase-root {
+    border-radius: 8px;
+
+    &:hover .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-color;
+    }
+
+    &.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-color;
+    }
+  }
+}
+
+.creation-select {
+  .MuiOutlinedInput-root.MuiInputBase-root {
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-color;
+    }
+
+    .MuiInputBase-input.MuiSelect-select {
+      color: $primary-color;
+    }
+  }
+}
+
+.creation-switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.creation-switch-label {
+  color: $text-primary;
+  font-weight: $font-weight-medium;
+}
+
+.creation-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-top: 32px;
+}
+
+.creation-button {
+  width: 170px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: $font-weight-medium;
+  text-transform: none;
+}
+
+.button-secondary {
+  @include button-secondary;
+}
+
+.creation-save-button {
+  background-color: $primary-color;
+  color: white;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.creation-day-selector {
+  max-width: 364px;
+  width: 100%;
+  margin: 25px auto 0 auto;
+  display: flex;
+  justify-content: center;
+}

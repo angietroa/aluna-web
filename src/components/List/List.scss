@@ -1,0 +1,74 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.list-wrapper {
+  @include page-wrapper("../../assets/images/low_background.svg");
+}
+
+.list-container {
+  padding-top: 21px;
+}
+
+.list-content {
+  @include flex-column;
+  min-height: calc(100vh - 200px);
+}
+
+.list-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 65px;
+}
+
+.list-create-button {
+  @include button-primary;
+  width: $button-width;
+  height: $button-height;
+}
+
+.list-alarms-container {
+  @include flex-column;
+  gap: 32px;
+}
+
+.list-alarm-item {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background-color: $background-color;
+  border-radius: 8px;
+}
+
+.list-alarm-content {
+  @include flex-column;
+  flex: 1;
+}
+
+.list-alarm-title {
+  color: $primary-color;
+  padding-bottom: 5px;
+}
+
+.list-alarm-description-container {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.list-alarm-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.list-alarm-description {
+  @include text-body;
+  color: $text-primary;
+  flex: 1;
+}
+
+.list-alarm-switch-container {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
