@@ -35,7 +35,6 @@
   display: flex;
   align-items: center;
   padding: 0 16px;
-  background-color: $background-color;
   border-radius: 8px;
 }
 
@@ -56,8 +55,8 @@
 }
 
 .list-alarm-icon {
-  width: 42px;
-  height: 42px;
+  width: $icon-size;
+  height: $icon-size;
   flex-shrink: 0;
 }
 
