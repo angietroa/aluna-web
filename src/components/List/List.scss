@@ -29,12 +29,14 @@
 .list-alarms-container {
   @include flex-column;
   gap: 32px;
+  padding: 0 16px;
 }
 
 .list-alarm-item {
+  @include card-container;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
-  padding: 0 16px;
   border-radius: 8px;
 }
 

@@ -7,10 +7,13 @@
 
 .home-container {
   .MuiButton-root,
-  .MuiButtonBase-root,
   .MuiTypography-root,
   .MuiTextField-root {
     margin-bottom: 7px;
+  }
+
+  .MuiButtonBase-root {
+    margin-bottom: 13px;
   }
 }
 

@@ -122,3 +122,9 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+@mixin card-container {
+  background-color: rgba($accent-color, 0.25);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}

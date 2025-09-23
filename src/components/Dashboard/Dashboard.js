@@ -69,28 +69,34 @@ const Dashboard = () => {
             </Box>
           </Box>
 
-          <Typography variant="h3" className="dashboard-recommendations-title">
-            Recomendaciones
-          </Typography>
-
-          <Box className="dashboard-recommendations-content">
-            <Box
-              component="img"
-              src={iaImage}
-              alt="IA"
-              className="dashboard-recommendations-icon"
-            />
-            <Typography className="dashboard-recommendations-text">
-              Para seguir potenciando tu progreso, te sugerimos mantener la
-              regularidad y experimentar con diferentes tipos de meditaciones
-              según tus objetivos: relajación profunda, enfoque mental o
-              reducción del estrés. Intenta elegir momentos del día donde te
-              resulte más fácil mantener la constancia y acompaña tu práctica
-              con hábitos que refuercen el equilibrio, como pausas conscientes,
-              respiración profunda o pequeños momentos de gratitud. De esta
-              manera, fortalecerás tu rutina y ampliarás los beneficios de tu
-              experiencia.
-            </Typography>
+          <Box className="dashboard-recommendations">
+            <Box className="dashboard-recommendations-container">
+              <Typography
+                variant="h3"
+                className="dashboard-recommendations-title"
+              >
+                Recomendaciones
+              </Typography>
+              <Box className="dashboard-recommendations-content">
+                <Box
+                  component="img"
+                  src={iaImage}
+                  alt="IA"
+                  className="dashboard-recommendations-icon"
+                />
+                <Typography className="dashboard-recommendations-text">
+                  Para seguir potenciando tu progreso, te sugerimos mantener la
+                  regularidad y experimentar con diferentes tipos de
+                  meditaciones según tus objetivos: relajación profunda, enfoque
+                  mental o reducción del estrés. Intenta elegir momentos del día
+                  donde te resulte más fácil mantener la constancia y acompaña
+                  tu práctica con hábitos que refuercen el equilibrio, como
+                  pausas conscientes, respiración profunda o pequeños momentos
+                  de gratitud. De esta manera, fortalecerás tu rutina y
+                  ampliarás los beneficios de tu experiencia.
+                </Typography>
+              </Box>
+            </Box>
           </Box>
 
           <Typography variant="h1" className="dashboard-panel-title">
